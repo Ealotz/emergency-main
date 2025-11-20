@@ -1,119 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/custom.css" />
-    <link rel="stylesheet" href="css/fonts.css" />
-    <link rel="stylesheet" href="css/general.css" />
-    <link rel="stylesheet" href="css/layout.css" />
-    <link rel="stylesheet" href="css/burger.css" />
-    <link rel="stylesheet" href="css/cards.css" />
-    <link rel="icon" type="image/png" href="img/fav.png" />
-    <title>Emergency Site</title>
-  </head>
-  <body id="frontpage">
-    <header>
-      <nav>
-        <div id="logotype-wrapper" class="logo">
-          <a href="index.html"> LOGO-TYPE </a>
-        </div>
-        <ul class="menu">
-          <li><a class="menuItem" href="instruction.html">Nærkontakt </a></li>
-          <li><a class="menuItem" href="register.html">Indberet</a></li>
-        </ul>
-        <button class="burger">
-          <span class="line"></span>
-          <span class="line"></span>
-          <span class="line"></span>
-        </button>
-      </nav>
-    </header>
-    <section id="main-disclamer">
-      <div id="main-disclamer-content">
-        <img src="warning" alt="ICON" />
-        <div>
-          <h1>OVERSKRIFT</h1>
-          <p class="sub">Underrubrik</p>
-        </div>
-      </div>
-    </section>
-    <main>
-      <section id="daily">
-        <article class="daily_card">
-          <img src="" alt="teaser_img" />
-          <div class="daily_text">
-            <h2>Teaser</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-              magnam ducimus ea, sed minima asperiores.
-            </p>
-            <a href="" class="cta_btn">Se mere</a>
-          </div>
-        </article>
-        <article class="daily_card">
-          <img src="" alt="teaser_img" />
-          <div class="daily_text">
-            <h2>Teaser</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-              magnam ducimus ea, sed minima asperiores.
-            </p>
-            <a href="" class="cta_btn">Se mere</a>
-          </div>
-        </article>
-      </section>
-      <section id="breaking">
-        <article class="news_card">
-          <h3>Nyhed</h3>
-          <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
-          <img src="" alt="news_img" />
-          <a class="cta_btn" href="">Læs mere</a>
-        </article>
-        <article class="news_card">
-          <h3>Nyhed</h3>
-          <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
-          <img src="" alt="news_img" />
-          <a class="cta_btn" href="">Læs mere</a>
-        </article>
-        <article class="news_card">
-          <h3>Nyhed</h3>
-          <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
-          <img src="" alt="news_img" />
-          <a class="cta_btn" href="">Læs mere</a>
-        </article>
-      </section>
-    </main>
 
-    <footer>
-      <nav class="some">
-        <ul>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-        </ul>
-      </nav>
-      <nav class="another">
-        <ul>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-        </ul>
-      </nav>
-      <nav class="yetanother">
-        <ul>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-        </ul>
-      </nav>
-    </footer>
-    <script src="js/burger.js"></script>
-    <!-- <script src="js/main.js"></script> -->
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/custom.css" />
+  <link rel="stylesheet" href="css/fonts.css" />
+  <link rel="stylesheet" href="css/general.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/burger.css" />
+  <link rel="stylesheet" href="css/cards.css" />
+  <link rel="stylesheet" href="css/infographic.css">
+  <link rel="icon" type="image/png" href="img/fav.png" />
+  <title>Emergency Site</title>
+</head>
+
+<body id="frontpage">
+  <header>
+    <nav>
+      <div id="logotype-wrapper" class="logo">
+        <a href="index.html"> <img src="img/LogoTilMonsterSite.webp" alt="LOGO"> </a>
+      </div>
+
+      <ul class="menu">
+        <button id="toggle">Dark</button>
+        <li><a class="menuItem" href="instruction.html">Nærkontakt </a></li>
+        <li><a class="menuItem" href="register.html">Indberet</a></li>
+      </ul>
+      <button class="burger">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </button>
+    </nav>
+  </header>
+  <section id="main-disclamer">
+    <div id="main-disclamer-content">
+      <img class="bestik" src="img/bestik.webp" alt="ICON" />
+      <div>
+        <h1 class="emergency">EMERGENCY!</h1>
+        <p class="sub">Flere bliver spist af monstre</p>
+      </div>
+    </div>
+  </section>
+  <main>
+    <section id="daily">
+      <article class="daily_card">
+        <img src="RentegningAfProjecktStroke copy3.webp" alt="teaser_img" />
+        <div class="daily_text">
+          <h2>UNDGÅ AT BLIVE SPIST</h2>
+
+          <details name="my-details">
+            <summary class="infoTilTeaser1">Information</summary>
+            <div class="tekstTilteaser1">
+              <p>
+                Det er en helt almindelig aften. Du sidder i dit gamle, potentielt hjemsøgte hus og overbeviser
+                dig
+                selv om, at de mærkelige
+                lyde er
+                vinden.</p>
+              <p>
+                Du ignorerer det, for du har åbenbart aldrig set en
+                horror
+                film. Pludeslig mærker du noget koldt røre din skulder.
+
+              </p>
+            </div>
+          </details>
+
+
+          <a href="instruction.html" class="cta_btn">Se mere</a>
+        </div>
+      </article>
+      <article class="daily_card">
+        <img src="img/FormsBillede.webp" alt="teaser_img" />
+        <div class="daily_text">
+          <h2>SØG OM HJÆLP NU</h2>
+
+          <details name="my-details">
+            <summary class="infoTilTeaser1">Information</summary>
+            <div class="tekstTilteaser1">
+
+              <p>
+                Klik her for at anmode om at komme på ventelisten. Vores eksperter vil gennemgå dine oplysninger, og vil
+                kontakte dig
+                inden for kort tid. </p>
+              <p>Derefter vil der være mulighed for at finde en løsning til dit problem (hvis du ikke
+                allerede er
+                blevet spist inden da).
+              </p>
+            </div>
+          </details>
+
+          <a href="register.html" class="cta_btn">Se mere</a>
+        </div>
+      </article>
+    </section>
+
+    <section id="breaking">
+
+      <article class="news_card">
+        <h3>MIT NYE HUS KOMMER MED ET MONSTER</h3>
+        <p>Eksperter advarer: Billige huse kan indeholde uønskede beboere.</p>
+        <img class="scaryHusBillede" src="img/ScaryHouse2.webp" alt="news_img" />
+
+        <dialog id="dialog1">
+          <form method="dialog">
+            <h2 class="NytHus">MIT NYE HUS KOMMER MED ET MONSTER</h2>
+            <h3 class="eksperterSiger">Eksperter advarer: Billige huse kan indeholde uønskede beboere.</h3>
+            <img class="scaryhus" src="img/ScaryHouse2.webp" alt="scaryhus">
+            <section class="tekstTilHus">
+              <p>Flere boligkøbere får sig en ubehagelig overraskelse, når drømmehuset viser sig at komme med mere end
+                bare skæve gulve
+                og fugt i kælderen. I takt med at gamle, historiske huse bliver sat til salg, oplever flere danskere nu
+                at
+                få et monster
+                med i købet.</p>
+              <p>De store, charmerende villaer frister med plads, atmosfære, og en pris, der virker for god til at være
+                sand. Og det er
+                den som regel også. For mange af disse hjem har allerede en beboer: en sulten, skyggelevende roommate,
+                der
+                ikke just
+                betaler husleje, men til gengæld æder ejeren.</p>
+              <p>“Folk tror, de kan vænne sig til dem,” fortæller boligekspert og amatør-eksorcist Karen Holm. “Men før
+                eller siden
+                bliver de sultne. Og så er det som regel for sent.”
+                Myndighederne anbefaler nu, at man aldrig køber et gammelt hus, der er mistænkeligt billigt – medmindre
+                man er klar til
+                at dele køkken med noget, der ikke sover om natten.</p>
+            </section>
+            <button id="close_btn">Luk</button>
+          </form>
+        </dialog>
+        <button class="cta_btn" id="cta_open1">Læs mere</button>
+      </article>
+
+      <article class="news_card">
+        <h3>SPIST AF ÆGTEFÆLLE PÅ BRYLLUPSDAG</h3>
+        <p>Romantisk ceremoni endte dramatisk i chok og sult.</p>
+        <img class="BryllupPicture" src="img/bryllupIGEN.webp" alt="news_img" />
+
+        <dialog id="dialog2">
+          <form method="dialog">
+            <h2 class="NytHus">SPIST AF ÆGTEFÆLLE PÅ BRYLLUPSDAG</h2>
+            <h3 class="eksperterSiger">Romantisk ceremoni endte dramatisk i chok og sult.</h3>
+            <img class="BryllupPicture1" src="img/bryllupIGEN.webp" alt="news_img" />
+            <section class="tekstTilHus">
+              <p>Bryllupper er normalt fyldt med tårer, kærlighed og kage, men for 29-årige Bjanka fik dagen en noget
+                anderledes
+                slutning. Hun nåede nemlig kun at være gift i få sekunder, før hendes nybagte ægtefælle bed hendes hoved
+                af foran præst,
+                familie og venner.</p>
+              <p>Bjanka havde for få år siden købt et billigt, gammelt hus, et køb hun hurtigt fandt ud af kom med en
+                beboer inkluderet.
+                Det mystiske monster, som allerede boede der, viste sig dog at have charme nok til at vinde hendes
+                hjerte.
+                De to fandt
+                kærligheden trods forskellene, og alt tegnede til en lykkelig slutning.</p>
+              <p>Men under vielsen gik det galt. “Der var stadig længe til kagen skulle serveres,” fortæller præst
+                Johansen, der
+                beskriver hændelsen som “tragisk, men forståelig”. Han tilføjer, at han “desværre ikke tror, det bliver
+                sidste gang, vi
+                ser et ægteskab ende på den måde.”
+              </p>
+            </section>
+
+            <button id="close_btn">Luk</button>
+          </form>
+        </dialog>
+        <button class="cta_btn" id="cta_open2">Læs mere</button>
+      </article>
+
+      <article class="news_card">
+        <h3>XRAY SCANNING AF MONSTER ER NU UDE</h3>
+        <p>Nu kan man få et kig på hvordan der ser ud inde i monstre.</p>
+        <img class="Xray" src="img/XRScanning.webp" alt="news_img" />
+
+        <div popover id="news_popover">
+          <h2 class="NytHus">XRAY SCANNING AF MONSTER ER NU UDE</h2>
+          <h3 class="eksperterSiger">Nu kan man få et kig på hvordan der ser ud inde i monstre.</h3>
+          <img class="BryllupPicture1" src="img/XRScanning.webp" alt="XRAYs">
+          <section class="tekstTilHus">
+            <p>Verdens første X-ray-scanning af et ægte monster er nu offentliggjort, og forskere kalder det et
+              “historisk øjeblik for
+              videnskaben og alle, der nogensinde har hørt mærkelige lyde om natten.” Scanningen giver for første gang
+              et direkte kig
+              ind i et monsters indre, på godt og ondt.</p>
+            <p>Billedet afslører en overraskende blanding af organer, mystiske strukturer og, mest opsigtsvækkende, en
+              helt almindelig
+              menneskehånd placeret midt i kroppen. Forskerne er enige om, at den “ikke burde være der”, men påpeger, at
+              hånden ser
+              “usædvanligt afslappet ud”.</p>
+            <p>Offentlighedens reaktioner spænder fra begejstring til bekymring. Nogle ser scanningen som et gennembrud,
+              mens andre
+              frygter, at monstre nu kan kræve journalindsigt og hensyn til deres “medicinske privatliv”.</p>
+            <p>Forskerholdet lover, at flere monstrøsiteter er på vej til undersøgelse. Næste projekt bliver en
+              MR-scanning af et
+              spøgelse, men holdet mangler stadig både specialudstyr og en villig frivillig, helst en, der ikke blæser
+              væk under
+              forsøget.</p>
+          </section>
+          <button id="close_btn" popovertarget="news_popover">Luk</button>
+        </div>
+        <button class="cta_btn" id="cta_open3" popovertarget="news_popover">Læs mere</button>
+      </article>
+
+    </section>
+  </main>
+
+  <footer>
+    <nav class="some">
+      <ul>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+      </ul>
+    </nav>
+    <nav class="another">
+      <ul>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+      </ul>
+    </nav>
+    <nav class="yetanother">
+      <ul>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+      </ul>
+    </nav>
+  </footer>
+  <script src="js/burger.js"></script>
+  <script src="js/dialog.js"></script>
+  <script src="js/light dark.js"></script>
+  <!-- <script src="js/main.js"></script> -->
+</body>
+
 </html>

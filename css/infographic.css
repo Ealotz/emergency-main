@@ -16,13 +16,18 @@
   background-color: var(--color-headline-bg);
   color: var(--color-headline-text-page);
   margin-bottom: 1rem;
+  font-size: 1.2rem;
 }
 .info-text h3 {
-  font-size: 0.8rem;
+  font-size: 1rem;
   line-height: 0.8rem;
   font-weight: 600;
   margin: 0;
   padding: 0;
+  margin-bottom: 1rem;
+  color: var(--info-tekst);
+  background-color: var(--info-bg);
+  padding: 0.5rem;
 }
 .info-text > *:not(:first-child) {
   margin: 0 clamp(1rem, 10%, 7rem);
@@ -39,4 +44,36 @@
 }
 .info-box:nth-of-type(2n) {
   background-color: var(--color-infobox-2-bg);
+}
+
+/******************* Animation *******************/
+
+.hide {
+  visibility: hidden;
+}
+
+.fadeIn {
+  animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeOut {
+  animation: fadeOut 0.5s;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }

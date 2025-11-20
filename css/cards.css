@@ -1,9 +1,13 @@
+::backdrop {
+  backdrop-filter: blur(5px);
+}
+
 .daily_card {
   background-color: var(--color-card-bg);
   display: grid;
   grid-template-columns: 3fr 5fr;
   gap: 10px;
-  padding: 40px 0 40px 20px;
+  padding: 35px 0 30px 35px;
   border-radius: var(--border-radius);
   height: minmax(200px, min-content);
 }
@@ -35,7 +39,7 @@
   background-color: var(--color-news-bg);
   display: grid;
   grid-template-rows: repeat(min-content);
-  gap: 0.4rem;
+
   padding: 1rem 0;
   height: minmax(300px, min-content);
 }
@@ -47,6 +51,9 @@
 }
 .news_card h3 {
   margin: 0.5rem 0 0 0;
+  font-size: 1rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 1rem;
 }
 .news_card p {
   margin: 0 0 1rem 0;
@@ -55,11 +62,12 @@
   content: "BREAKING NEWS";
   background-color: var(--color-headline-bg);
   color: var(--color-headline-text-page);
-  font-size: var(--font-h3-size);
+  font-size: 1.4rem;
   font-weight: var(--font-weight-medium);
   text-align: center;
   line-height: 1rem;
   padding: calc(1.1rem / 1.5) 0 calc(1.1rem / 2) 0;
+  padding: 1rem;
 }
 .news_card:first-child {
   border-radius: var(--border-radius) var(--border-radius) 0 0;
@@ -79,15 +87,125 @@
   text-decoration: none;
   width: max-content;
   border-radius: var(--border-radius);
+  margin-bottom: 0.5rem;
+
+  border-width: 0.2rem;
 }
 .news_card .cta_btn {
   background-color: var(--color-cta-newscard-bg);
 }
 .news_card:nth-of-type(2n) .cta_btn {
   background-color: var(--color-cta-newscard-bg-inverted);
-  color: var(--color-text);
+  color: white;
 }
 .cta_btn:after {
   content: "\2192";
   margin-left: 1rem;
+}
+
+/*********************** ARTIKEL 1 ***********************/
+
+.scaryHusBillede {
+  margin-bottom: 1rem;
+}
+
+#dialog1 {
+  width: 650px;
+  padding: 2.8rem;
+  border-radius: 1.5rem;
+  border-color: #8a1480;
+  border-width: 0.4rem;
+}
+
+.scaryhus {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.tekstTilHus {
+  background-color: var(--hus-bg);
+}
+
+.NytHus {
+  font-size: 2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-bottom: 0;
+  font-weight: bolder;
+}
+
+.eksperterSiger {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-weight: normal;
+  padding: 0.7rem;
+  background-color: var(--eksperter-bg);
+  color: var(--eksperter-tekst);
+}
+
+#close_btn {
+  padding: 0.8rem;
+  width: 6.3rem;
+  border-radius: 1.8rem;
+  margin-top: 1.5rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  background-color: var(--button-close-bg);
+  color: var(--button-close-tekst);
+  border-width: 0.2rem;
+}
+
+/*********************** ARTIKEL 2 ***********************/
+
+.BryllupPicture1 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+#dialog2 {
+  width: 650px;
+  padding: 2.8rem;
+  border-radius: 1.5rem;
+  border-color: #8a1480;
+  border-width: 0.4rem;
+}
+
+/*.bryllupTekst {
+  background-color: rgb(222, 230, 255);
+}*/
+
+.BryllupPicture {
+  margin-bottom: 0.7rem;
+}
+
+/*********************** ARTIKEL 3 ***********************/
+
+.Xray {
+  margin-bottom: 0.7rem;
+}
+
+[popover] {
+  width: 650px;
+  padding: 2.8rem;
+  border-radius: 1.5rem;
+  border-color: #8a1480;
+  border-width: 0.4rem;
+  max-height: 95vh;
+}
+
+[popover] {
+  opacity: 0;
+  transition: opacity 0.6s;
+}
+
+[popover]:popover-open {
+  opacity: 1;
+}
+
+@starting-style {
+  [popover]:popover-open {
+    opacity: 0;
+  }
 }
