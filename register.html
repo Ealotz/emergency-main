@@ -1,81 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/custom.css" />
-    <link rel="stylesheet" href="css/fonts.css" />
-    <link rel="stylesheet" href="css/general.css" />
-    <link rel="stylesheet" href="css/layout.css" />
-    <link rel="stylesheet" href="css/burger.css" />
-    <link rel="stylesheet" href="css/cards.css" />
-    <link rel="stylesheet" href="css/form.css" />
-    <link rel="icon" type="image/png" href="img/fav.png" />
-    <title>Emergency Site</title>
-  </head>
-  <body id="register">
-    <header>
-      <nav>
-        <div id="logotype-wrapper" class="logo">
-          <a href="index.html"> LOGO-TYPE </a>
-        </div>
-        <ul class="menu">
-          <li><a class="menuItem" href="instruction.html">Nærkontakt </a></li>
-          <li><a class="menuItem" href="register.html">Indberet</a></li>
-        </ul>
-        <button class="burger">
-          <span class="line"></span>
-          <span class="line"></span>
-          <span class="line"></span>
-        </button>
-      </nav>
-    </header>
 
-    <main>
-      <h1>INDBERET</h1>
-      <section id="form-section">
-        <article id="form-info">
-          <h2>Overskrift</h2>
-          <p>Tekst</p>
-        </article>
-        <form id="webform"></form>
-      </section>
-      <section id="form-summary">
-        <h2>Summary</h2>
-        <article>
-          <p class="placeholder">Opsummering</p>
-        </article>
-      </section>
-    </main>
-    <footer>
-      <nav class="some">
-        <ul>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-        </ul>
-      </nav>
-      <nav class="another">
-        <ul>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-        </ul>
-      </nav>
-      <nav class="yetanother">
-        <ul>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-        </ul>
-      </nav>
-    </footer>
-    <script src="js/burger.js"></script>
-    <!-- <script src="js/main.js"></script> -->
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/custom.css" />
+  <link rel="stylesheet" href="css/fonts.css" />
+  <link rel="stylesheet" href="css/general.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/burger.css" />
+  <link rel="stylesheet" href="css/cards.css" />
+  <link rel="stylesheet" href="css/form.css" />
+  <link rel="icon" type="image/png" href="img/fav.png" />
+  <title>Emergency Site</title>
+</head>
+
+<body id="register">
+  <header>
+    <nav>
+      <div id="logotype-wrapper" class="logo">
+        <a href="index.html"> <img src="img/LogoTilMonsterSite.webp" alt="LOGO"> </a>
+      </div>
+      <ul class="menu">
+        <button id="toggle">Dark</button>
+        <li><a class="menuItem" href="instruction.html">Nærkontakt </a></li>
+        <li><a class="menuItem" href="register.html">Indberet</a></li>
+      </ul>
+      <button class="burger">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="form-section">
+      <article id="form-info">
+        <h1>INDBERET: Monster i Personlig Ejendom</h1>
+
+      </article>
+      <form id="webform">
+
+        <fieldset>
+
+          <h2 class="info">Personlige Oplysninger:</h2>
+
+          <div class="personligInfo">
+            <label for="first_name">Fornavn</label>
+            <input type="text" id="first_name" name="first_name" required>
+            <span class="fejlmeddelelse"></span>
+
+            <label for="last_name">Efternavn</label>
+            <input type="text" id="last_name" name="last_name" required>
+            <span class="fejlmeddelelse"></span>
+
+            <div class="Aldre">
+              <label for="alders_gruppe">Alders Gruppe</label>
+              <select id="alders_gruppe" name="alders_gruppe">
+                <option value="">--Vælg en gruppe--</option>
+                <option value="0-10">0-10</option>
+                <option value="11-19">11-19</option>
+                <option value="20-30">20-30</option>
+                <option value="31+">31+</option>
+              </select>
+            </div>
+
+            <label for="Email">Email</label>
+            <span class="instruktion">Skal inholde et @ tegn</span>
+            <input id="Email" type="email" name="Email" required>
+            <span class="fejlmeddelelseemail"></span>
+          </div>
+        </fieldset>
+
+        <fieldset>
+
+          <h2 class="dato">Dato:</h2>
+
+          <div class="datoDIV">
+            <p class="datoP">Indsæt venligst datoen problemet først opstod.</p>
+            <label for="dato"></label>
+            <input type="date" id="dato" name="dato">
+          </div>
+        </fieldset>
+
+        <fieldset>
+
+          <h2 class="Kendetegnformonster">Kendetegn</h2>
+
+          <p class="TjekAf">Marker de felter der beskriver din situation.</p>
+          <p class="Flere">Vælg gerne flere</p>
+          <div class="flereKendeTegn">
+            <div class="checkbox-linje2">
+              <input id="BoAlene" type="checkbox" name="kendetegn" value="Jeg bor alene">
+              <label for="BoAlene">Jeg bor alene</label>
+            </div>
+            <div class="checkbox-linje2">
+              <input id="LufteUd" type="checkbox" name="kendetegn" value="Jeg lufter ikke ud hver dag">
+              <label for="LufteUd">Jeg lufter ikke ud hver dag</label>
+            </div>
+            <div class="checkbox-linje2">
+              <input id="TomtSkab" type="checkbox" name="kendetegn" value="Mit køleskab er tomt">
+              <label for="TomtSkab">Mit køleskab er tomt</label>
+            </div>
+            <div class="checkbox-linje2">
+              <input id="BilligtHus" type="checkbox" name="kendetegn" value="Huset var mistænkeligt billigt ift.
+                størrelsen">
+              <label for="BilligtHus">Huset var mistænkeligt billigt ift.
+                størrelsen</label>
+            </div>
+            <div class="checkbox-linje22">
+              <input id="UnderligeLyde" type="checkbox" name="kendetegn" value="Der er mange uforklarlige lyde">
+              <label for="UnderligeLyde">Der er mange uforklarlige lyde</label>
+            </div>
+          </div>
+        </fieldset>
+
+
+        <fieldset>
+          <h2 class="tekstlang">Hvad skete der:</h2>
+          <div class="TekstLangDIV">
+
+
+            <label for="message">Beskriv situationen i detaljer nedenfor</label>
+            <textarea name="message" id="message"></textarea>
+
+
+          </div>
+        </fieldset>
+
+
+        <div class="AdvarelseDIV">
+          <h2 class="BEMARK">! IMPORTANT !</h2>
+          <p class="Bekmark2">Vi hos Monster Meal er ikke juridisk forpligtet til at tage ansvar i det
+            tilfælde brugeren bliver
+            spist. Inholdet er udelukkende til hjælpebrug. Det er brugerens eget ansvar hvordan de vælger at fortolke
+            informationen
+            givet.</p>
+        </div>
+
+
+        <div class="checkbox-linje">
+          <input type="checkbox" id="accepter" name="accepter" required />
+          <label for="accepter">Jeg accepterer vilkår og betingelser</label>
+          <span class="fejlmeddelelse"></span>
+        </div>
+
+        <button class="button" type="submit">Send</button>
+
+      </form>
+
+    </section>
+    <section class="output">
+      <h2 class="summary">Summary:</h2>
+      <article>
+        <div class="opsumering1">
+          <p class="sum1">Fornavn: <span id="first_name_output"></span></p>
+          <p class="sum2">Efternavn: <span id="last_name_output"></span></p>
+          <p class="sum3">Alders gruppe: <span id="alder_output"></span></p>
+          <p class="sum4">Email: <span id="email_output"></span></p>
+          <p class="sum5">Dato: <span id="dato_output"></span></p>
+          <p class="sum8">Kendetegn: <span id="kendetegn_output"></span></p>
+          <p class="sum6">Beskrivelse: <span id="beskrivelse_output"></span></p>
+          <p class="sum7">Terms accepted: <span id="terms_output"></span></p>
+
+        </div>
+      </article>
+    </section>
+  </main>
+  <footer>
+    <nav class="some">
+      <ul>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+      </ul>
+    </nav>
+    <nav class="another">
+      <ul>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+      </ul>
+    </nav>
+    <nav class="yetanother">
+      <ul>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+  <script src="js/burger.js"></script>
+  <script src="js/form.js"></script>
+  <script src="js/light dark.js"></script>
+  <!-- <script src="js/main.js"></script> -->
+</body>
+
 </html>

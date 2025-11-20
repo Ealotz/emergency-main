@@ -40,10 +40,12 @@ h1 {
 
 #instruction h1,
 #register h1 {
-  margin: 40px 0 20px 0;
   padding: 15px 30px;
   background-color: var(--color-head-bg);
-  font-size: var(--font-h2-size);
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  font-weight: 800;
+  margin-top: 1rem;
 }
 
 #instruction p {
@@ -57,22 +59,23 @@ h1 {
   font-size: var(--font-sub1-size);
   font-weight: var(--font-weight-light);
   color: var(--color-text-inverted);
+  background-color: var(--color-text-inverted-bg);
 }
 
 h2 {
-  font-size: var(--headline2-size);
+  font-size: 1.2rem;
 }
 
 h3 {
   font-size: var(--headline3-size);
 }
 
-main>h1 {
+main > h1 {
   width: calc(80% - 6rem);
 }
 
 /* NAVIGATION STRUCTURES */
-header>nav {
+header > nav {
   height: 100%;
   background-color: var(--color-menu-bg);
 }
@@ -82,12 +85,15 @@ nav ul {
 }
 
 a {
-  font-family: var(--font-family-sans);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 0.9rem;
 }
 
 nav a {
   text-decoration: none;
   color: var(--color-text);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 580;
 }
 
 /* Måske skal du lave en ny regel for logotype-wrapper, når du har lavet din logotype */
@@ -95,15 +101,14 @@ nav a {
   background-color: var(--color-logotype-bg);
   display: flex;
   justify-content: flex-start;
-  align-items: center;
-  height: 3.6rem;
 }
 
-#logotype-wrapper>a {
+#logotype-wrapper img {
   color: var(--color-text-logotype);
   font-size: var(--font-logotype-size);
   font-weight: var(--font-weight-medium);
-  width: max-content;
+  width: 320px;
+  padding: 1rem;
   margin-left: 1rem;
 }
 
@@ -118,7 +123,7 @@ header nav li a {
 }
 
 /* Pilen efter menu-tekst */
-header>nav li>a:after {
+header > nav li > a:after {
   content: " \2192";
 }
 
@@ -134,4 +139,339 @@ nav a:active {
 /* FOOTER */
 footer a {
   font-size: 0.7rem;
+}
+
+/**************************** REGISTER ****************************/
+
+.info {
+  font-size: 1.4rem;
+
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-left: 1rem;
+}
+
+.dato {
+  font-size: 1.4rem;
+  margin-bottom: 0.2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-left: 1rem;
+}
+
+.Kendetegnformonster {
+  font-size: 1.4rem;
+  margin-bottom: 0.2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-left: 1rem;
+}
+
+.tekstlang {
+  font-size: 1.4rem;
+  margin-bottom: 0.2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-left: 1rem;
+}
+
+.BEMARK {
+  font-size: 2.4rem;
+  margin-bottom: 1.2rem;
+  margin-top: 2.9rem;
+  color: var(--bemark-bg);
+  margin-left: 1rem;
+}
+
+.Bekmark2 {
+  margin-bottom: 1rem;
+}
+
+fieldset {
+  background-color: var(--fieldset-bg);
+  margin: 1rem;
+  border: none;
+}
+
+label {
+  display: block;
+  margin-bottom: 0rem;
+}
+
+input {
+  display: block;
+  margin-bottom: 0.8rem;
+  padding: 0.3rem;
+  background-color: var(--input-bg);
+}
+
+.stor-input {
+  width: 80%;
+  height: 8rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+.personligInfo {
+  padding-left: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.datoDIV {
+  padding-left: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.TekstLangDIV {
+  padding: 0.5rem;
+  margin-left: 0.8rem;
+  margin-bottom: 0.8rem;
+}
+
+.TjekAf {
+  margin-top: 1rem;
+  padding-left: 1.5rem;
+}
+
+.Flere {
+  font-size: 0.8rem;
+  padding-left: 1.5rem;
+  font-weight: 900;
+  color: var(--flere-bg-text);
+}
+
+#message {
+  background-color: var(--message-bg);
+  border-width: 0.1rem;
+  border-color: black;
+  width: 80%;
+  margin-top: 0.5rem;
+}
+
+#form-section {
+  background-color: var(--section-bg);
+}
+
+.button {
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  margin: 1.5rem;
+  margin-top: 3rem;
+  margin-bottom: 2.5rem;
+  background-color: var(--button-bg);
+  border-radius: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  letter-spacing: 0.1rem;
+  font-weight: 800;
+}
+
+.accepter {
+  font-weight: 600;
+}
+
+.checkbox-linje {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-linje label {
+  margin: 0;
+  font-weight: 600;
+}
+
+#accepter {
+  margin-left: 2rem;
+  margin: 1rem;
+}
+
+.instruktion {
+  font-size: 0.7rem;
+  font-weight: 800;
+}
+
+input:user-invalid {
+  border-color: red;
+  background-color: rgb(255, 231, 231);
+}
+
+input:user-invalid + span::before {
+  content: "Indtast gyldige oplysninger";
+  color: darkred;
+  font-weight: 900;
+  font-size: 0.7rem;
+}
+
+input:focus {
+  background-color: var(--focus-bg);
+}
+
+input:hover {
+  background-color: var(--hover-bg);
+}
+
+.flereKendeTegn {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.checkbox-linje2 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-left: 1.5rem;
+  margin-top: 1rem;
+}
+
+.checkbox-linje2 input[type="checkbox"] {
+  margin: 0;
+  width: 16px;
+  height: 16px;
+}
+
+.checkbox-linje2 label {
+  margin: 0;
+  line-height: 1.2;
+}
+
+.checkbox-linje22 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-left: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 2.4rem;
+}
+
+.checkbox-linje22 input[type="checkbox"] {
+  margin: 0;
+  width: 16px;
+  height: 16px;
+}
+
+.checkbox-linje22 label {
+  margin: 0;
+  line-height: 1.2;
+}
+
+#alders_gruppe {
+  background-color: var(--alder-bg);
+  border-radius: 0cm;
+  border-width: 0.1rem;
+  padding: 0.5rem;
+  width: 217px;
+  margin-bottom: 0.8rem;
+}
+
+/**************************** MERE ? ****************************/
+
+.Apply {
+  font-size: 1.2rem;
+  margin-bottom: 0.4rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-left: 2rem;
+  margin-top: 1.9rem;
+}
+
+.Udfyldskema {
+  font-size: 1rem;
+  margin-bottom: 2.9rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-left: 2rem;
+}
+
+.output {
+  background-color: var(--output-bg);
+}
+
+.emergency {
+  font-size: 4rem;
+  font-weight: 900;
+  margin-top: 5rem;
+  margin-left: 2.5rem;
+}
+.sub {
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+  margin-left: 2.8rem;
+  /*background-color: #4c1d5e;*/
+  text-align: center;
+}
+
+.infoTilTeaser1 {
+  background-color: var(--teaser-bg);
+  padding: 0.8rem 1rem;
+  width: 95%;
+  text-align: left;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  font-weight: 550;
+}
+
+.tekstTilteaser1 {
+  padding-top: 1.3rem;
+  padding-left: 1rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/**************************** SUMMARY OUTPUT ****************************/
+.summary {
+  padding: 15px 30px;
+  background-color: var(--color-head-bg);
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  font-weight: 800;
+  margin-top: 1rem;
+
+  font-size: 1.7rem;
+  font-weight: 550;
+  color: var(--color-text-inverted);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: left;
+}
+
+.opsumering1 {
+  padding: 1rem;
+  padding-left: 1.5rem;
+  background-color: var(--summary-bg);
+  font-weight: 550;
+}
+
+.sum2 {
+  margin-top: 1.2rem;
+}
+
+.sum3 {
+  margin-top: 1.2rem;
+}
+
+.sum4 {
+  margin-top: 1.2rem;
+}
+
+.sum5 {
+  margin-top: 1.2rem;
+}
+
+.sum6 {
+  margin-top: 1.2rem;
+}
+
+.sum7 {
+  margin-top: 1.2rem;
+}
+
+.bestik {
+  width: 7rem;
+  height: 9rem;
+  margin-left: 3rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+#toggle {
+  background-color: var(--toggle-bg);
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-top: -5px;
+  border-radius: 2rem;
+  margin-right: 1rem;
 }
